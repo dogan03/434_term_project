@@ -8,7 +8,7 @@ This project aims to design an autonomously navigating car within a randomly gen
 
 ### Path Planning
 
-The path planning component of the project utilizes the A-star algorithm, a popular choice for its efficiency in finding the shortest path in a grid-based map. Given the constrained environment of the factory environment, A-star is particularly effective. After the planning the algorithm iteratively selects a goal position that is one meter away from the robot towards the final destination.
+The path planning component of the project utilizes the A-star algorithm, a popular choice for its efficiency in finding the shortest path in a grid-based map. Given the constrained environment of the factory environment, A-star is particularly effective. After the planning, the algorithm iteratively selects a goal position that is one meter away from the robot towards the final destination.
 
 ### Following the Path
 
