@@ -8,15 +8,15 @@ This project aims to design an autonomously navigating car within a randomly gen
 
 ### Path Planning
 
-The path planner is A-star algorithm in the project. Since the dungeon is not so wide it works really well. Then, algorithm selects the goal posiiton to be the one 1 meter away from the robot towards final destination iteratively.
+The path planning component of the project utilizes the A-star algorithm, a popular choice for its efficiency in finding the shortest path in a grid-based map. Given the constrained environment of the factory environment, A-star is particularly effective. The algorithm iteratively selects a goal position that is one meter away from the robot towards the final destination.
 
 ### Following the Path
 
-To follow the path, project relies on the DWA algorithm which handles both static and dynamic obstacles problem.
+To follow the planned path, the project employs the Dynamic Window Approach (DWA) algorithm. DWA is adept at handling both static and dynamic obstacles by dynamically adjusting the robot's steering angle. This ensures smooth navigation even in the presence of moving obstacles.
 
 ### Decision Tree
 
-While the robot follows the path, decision tree helps the robot to handle edge cases and reach final destination faster.
+A decision tree is integrated to manage the robot's behavior under various edge cases, optimizing its performance and ensuring timely arrival at the final destination. The decision tree helps in making critical decisions such as speed adjustments and sharp turns, enhancing the overall robustness of the navigation system.
 
 ## Problems Faced and Their Solutions
 
@@ -34,9 +34,9 @@ While the robot follows the path, decision tree helps the robot to handle edge c
 
 #### Problems
 
-- DWA being computational burden
-- Velocity being so slow
-- Edge cases steering problem
+- Computational Burden of DWA
+- Slow Velocity
+- Steering edge cases
 
 #### Solutions
 
