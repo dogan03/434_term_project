@@ -12,11 +12,11 @@ The path planning component of the project utilizes the A-star algorithm, a popu
 
 ### Following the Path
 
-To follow the planned path, the project employs the Dynamic Window Approach (DWA) algorithm. DWA is adept at handling both static and dynamic obstacles by dynamically adjusting the robot's steering angle. This ensures smooth navigation even in the presence of moving obstacles.
-
+To follow the planned path, the project employs the Dynamic Window Approach (DWA) algorithm. DWA is adept at handling both static and dynamic obstacles by dynamically adjusting the robot's velocity and steering angle. This ensures smooth navigation even in the presence of moving obstacles. However, for computational efficiency, the velocity component has been removed from the algorithm. This simplification allows the algorithm to focus on goal and obstacle costs, reducing its complexity and computational burden.
 ### Decision Tree
 
 A decision tree is integrated to manage the robot's behavior under various edge cases, optimizing its performance and ensuring timely arrival at the final destination. The decision tree helps in making critical decisions such as speed adjustments and sharp turns, enhancing the overall robustness of the navigation system.
+
 
 ## Problems Faced and Their Solutions
 
